@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Formulario</title>
+</head>
+<body>
+    <h3>Aula de aplicação e criação de um formulario com a tag form junto com as tags: </h3>
+    <ul>
+
+        <!-- Inputs do formulario -->
+        <li>input</li>
+        <li>textarea</li>
+        <li>button</li>
+        <li>select</li>
+        <li>fieldset</li>
+        <li>label</li>
+    </ul>
+    <hr>
+    <br>
+
+    <h4>Formulario</h4>
+    <!-- Form -->
+    <form>
+        <div>
+             <label for="name">Name
+                 <input type="text" id="name">
+             </label>
+        </div>
+
+        <div>
+            <label for="email">Email
+                <input type="email" id="email" required>
+            </label>
+        </div>
+
+        <div>
+        <!-- Radio button -->
+             <input type="radio" name="preco" value="150"> R$ 150,00
+             <input type="radio" name="preco" value="200"> R$ 200,00
+             <input type="radio" name="preco" value="250"> R$ 250,00
+             <input type="radio" name="preco" value="300"> R$ 300,00
+        </div>  
+
+        <!-- CheckBox-->
+        <div>
+             <input type="checkbox" name="variosprecos" value="150"> R$ 150,00
+             <input type="checkbox" name="variosprecos" value="200"> R$ 200,00
+             <input type="checkbox" name="variosprecos" value="250"> R$ 250,00
+             <input type="checkbox" name="variosprecos" value="300"> R$ 300,00
+        </div>    
+
+        <!-- Select, funciona como um dropdown -->
+        <div>
+            <label>Selecione um time <br>
+                <select>
+                    <option value="" selected>Selecione um time</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Palmeiras">Palmeiras</option>
+                    <option value="Flamengo">Flamengo</option>
+                    <option value="Santos">Santos</option>
+                </select>
+            </label>
+        </div>
+
+
+        <!-- Textarea -->
+        <div>
+            <label> Digite seu comentário <br>
+                <textarea></textarea>
+            </label>
+        </div>
+
+        
+        <!-- Botão -->
+        <button>Enviar Formulario</button>
+
+    </form>
+
+
+</body>
+</html>
