@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Visibilidade</title>
+
+    <style>
+        p{
+            color: blue;
+            text-align: center;
+        }
+
+        p.exemplo-1{
+            display: block;
+        }
+
+        p.exemplo-2{
+            display: inline;
+        }
+
+        .titulo{
+            text-align: center;
+        }
+
+        p.exemplo-3{
+            display: inline-block;
+        }
+
+        p.exemplo-4{
+            display: none;
+        }
+
+        .show:hover p.exemplo-4{
+            text-align: center;
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <p class="exemplo-1">Texto 1</p>
+    
+    <div class="titulo">
+        Titulo 2
+        <p class="exemplo-2">Texto 2</p>
+    </div>
+
+    <div class="titulo">
+        Titulo 3
+        <p class="exemplo-3">Texto 3</p>
+    </div>
+
+    <div class="show">
+        aparecer!
+        <p class="exemplo-4">Texto 4</p>
+    </div>
+    
+</body>
+</html>
