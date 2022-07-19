@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidade</title>
+        
+    <!-- 0.0.0.1 'Grau de especificidade'-->
+    <style>
+        p{
+            color: royalblue;
+            text-align: center;
+        }
+
+        /* 0.0.1.1 'Grau de especificidade'*/
+        .nova-cor{
+            color: tomato;
+        }
+
+        /* 0.1.1.1 'Grau de especificidade'*/
+        #nova-cor-id1, #nova-cor-id2{
+            color: crimson;
+        }
+    </style>
+
+</head>
+<body>
+
+    <p>Wesley Martins</p>
+    <p class="nova-cor">Beatriz Cristina</p>
+    <p class="nova-cor">Gael</p>
+    <p id="nova-cor-id1">Javascript</p>
+
+    <!-- 1.1.1.1 'Grau de especificidade'-->
+    <p id="nova-cor-id2" class="nova-cor" style="color: blueviolet">São Paulo F.C</p>
+    
+</body>
+</html>
